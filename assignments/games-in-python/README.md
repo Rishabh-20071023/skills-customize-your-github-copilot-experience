@@ -1,19 +1,51 @@
+# 📘 Assignment: Hangman Game Challenge
 
-# 🎮 Hangman Game Challenge
+## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+Build a fully playable Hangman game in Python that uses strings, loops, conditionals, and user input to let players guess a hidden word.
 
-## � What You'll Build
+## 📝 Tasks
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+### 🛠️ Word Selection and Game Setup
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+#### Description
 
-## ✅ Must Have's
+Create the game setup to choose a random word from a predefined list and initialize the puzzle state for the player.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Define a list of possible words for the game.
+- Randomly select one word each time the game starts.
+- Initialize a hidden word display with underscores for each letter.
+- Track letters guessed and remaining attempts.
+
+### 🛠️ Letter Guessing and Game Loop
+
+#### Description
+
+Implement the main game loop to process letter guesses, update the display, and end the game when the player wins or loses.
+
+#### Requirements
+Completed program should:
+
+- Prompt the player to guess one letter at a time.
+- Reveal correctly guessed letters in the hidden word display.
+- Count incorrect guesses and reduce remaining attempts accordingly.
+- End the game with a win message when the word is fully guessed.
+- End the game with a lose message when attempts run out.
+
+### 🛠️ User Feedback and Results
+
+#### Description
+
+Display the current game state and final result clearly, so the player always knows their progress.
+
+#### Requirements
+Completed program should:
+
+- Show the current progress of the word after each guess, e.g. `h _ n g m a n`.
+- Show the number of incorrect guesses remaining.
+- Inform the player when a guessed letter was incorrect or already guessed.
+- Print a final message declaring whether the player won or lost.
+
